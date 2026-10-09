@@ -1,0 +1,10 @@
+{
+  "info": { "name": "Memory Vault - Gatekeeper Rule", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json" },
+  "item": [
+    {"name": "1. POST create user - 201", "request": {"method": "POST", "url": "http://127.0.0.1:8000/users", "body": {"mode": "raw", "raw": "{\n  "email": "a@b.com",\n  "age": 24\n}", "options": {"raw": {"language": "json"}}}}},
+    {"name": "2. POST same user - 409 Conflict", "request": {"method": "POST", "url": "http://127.0.0.1:8000/users", "body": {"mode": "raw", "raw": "{\n  "email": "a@b.com",\n  "age": 24\n}", "options": {"raw": {"language": "json"}}}}},
+    {"name": "3. POST invalid age - CHECK", "request": {"method": "POST", "url": "http://127.0.0.1:8000/users", "body": {"mode": "raw", "raw": "{\n  "email": "a@b.com",\n  "age": -5\n}", "options": {"raw": {"language": "json"}}}}},
+    {"name": "4. GET list - 200", "request": {"method": "GET", "url": "http://127.0.0.1:8000/users"}},
+    {"name": "5. DELETE - 204", "request": {"method": "DELETE", "url": "http://127.0.0.1:8000/users/1"}}
+  ]
+}

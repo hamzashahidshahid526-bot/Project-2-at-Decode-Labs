@@ -1,0 +1,30 @@
+# Secrets - NEVER push to GitHub
+.env
+
+# Database file (if using SQLite)
+memory_vault.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+ENV/
+
+# Docker volumes
+postgres_data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+
+
