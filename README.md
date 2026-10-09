@@ -70,10 +70,3 @@ git commit -m "feat: Implement Memory Vault with Postgres, UNIQUE constraint and
 git push
 ```
 
-Take screenshots:
-- Screenshots/201_created.png
-- Screenshots/409_conflict.png
-- Screenshots/200_persistence.png
-- Screenshots/204_deleted.png
-
-Welcome to backend engineering. The Memory Vault is now online.
